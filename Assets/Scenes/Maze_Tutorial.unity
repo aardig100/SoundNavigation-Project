@@ -485,6 +485,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerRig
       objectReference: {fileID: 0}
+    - target: {fileID: 6148902480609078788, guid: 4ac6d88ef384b3c428f06f0f9f9ea5d0,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148902481139154287, guid: 4ac6d88ef384b3c428f06f0f9f9ea5d0,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ac6d88ef384b3c428f06f0f9f9ea5d0, type: 3}
 --- !u!1 &1249602265
