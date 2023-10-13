@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class StateData : MonoBehaviour
 {
-    static int mazeNumber = 0;
-    static int soundConfiguration = 0;
+    public static int mazeNumber = 0;
+    public static int soundConfiguration = 0;
 }

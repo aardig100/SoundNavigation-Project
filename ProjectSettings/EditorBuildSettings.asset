@@ -6,8 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Game.unity
+    guid: b3b5c5529400b3149af627ebee17da5c
+  - enabled: 1
+    path: Assets/Scenes/Maze_Tutorial.unity
+    guid: 8c98c00bc8499254b86fb7c67bb0f7cd
+  - enabled: 1
+    path: Assets/Scenes/Maze_1.unity
+    guid: d6d0055c75d99ac459c80aabd4199d2a
+  - enabled: 1
+    path: Assets/Scenes/Maze_2.unity
+    guid: 7f6b2431cfc38bf4db55663806db0f81
+  - enabled: 1
+    path: Assets/Scenes/Maze_3.unity
+    guid: 639fe47d199f50e4a9c566ccb399ff09
+  - enabled: 1
+    path: Assets/Scenes/Maze_4.unity
+    guid: 2b159319cc5e32d458a206e9f786b342
+  - enabled: 1
+    path: Assets/Scenes/Maze_5.unity
+    guid: 04b3daaa4bdbac4438a90c52c6573b62
+  - enabled: 1
+    path: Assets/Scenes/NextMaze.unity
+    guid: 4b0e7ac7d13c16440b5a976264761bbb
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 59f8161d6f6be2e468283da7e88c3ee4,
       type: 2}
