@@ -25,12 +25,14 @@ public class MouseLook : MonoBehaviour
     void HandleHorizontalLookChange(InputAction.CallbackContext obj)
     {
         yaw += obj.ReadValue<float>();
+
         transform.localRotation = Quaternion.AngleAxis(yaw * lookSpeed, Vector3.up);
     }
 
     void HandleVerticalLookChange(InputAction.CallbackContext obj)
     {
         pitch -= obj.ReadValue<float>();
+        pitch = Mathf.Clamp(pitch, -90f, 90f);
         cameraTransform.localRotation = Quaternion.AngleAxis(pitch * lookSpeed, Vector3.right);
     }
 

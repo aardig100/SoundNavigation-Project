@@ -580,6 +580,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &918005455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4332479513336435026, guid: 099c08e6aef0437438210fc6e2c67aa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4332479512991912228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1046628992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4332479513503058125, guid: 099c08e6aef0437438210fc6e2c67aa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4332479512991912228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1046628998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046628992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3cbe1616997f04584ee2655c08b6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraObj: {fileID: 918005455}
+  speed: 200
+  charCntrl: {fileID: 1046628999}
+--- !u!143 &1046628999
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046628992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &1486059358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4332479512813794244, guid: 099c08e6aef0437438210fc6e2c67aa3,
@@ -863,6 +908,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1701160155}
+    - target: {fileID: 4332479512813794245, guid: 099c08e6aef0437438210fc6e2c67aa3,
+        type: 3}
+      propertyPath: m_LocomotionProvider
+      value: 
+      objectReference: {fileID: 375802875}
     - target: {fileID: 4332479513705359596, guid: 099c08e6aef0437438210fc6e2c67aa3,
         type: 3}
       propertyPath: m_Name
