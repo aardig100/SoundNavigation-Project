@@ -1623,6 +1623,7 @@ GameObject:
   - component: {fileID: 6148902481139154280}
   - component: {fileID: 6148902480609078788}
   - component: {fileID: 6148902480609078789}
+  - component: {fileID: 1474924724}
   m_Layer: 0
   m_Name: PlayerBody
   m_TagString: Untagged
@@ -1761,6 +1762,18 @@ MonoBehaviour:
   cameraObj: {fileID: 6148902481238926581}
   speed: 2000
   charCntrl: {fileID: 6148902480609078788}
+--- !u!114 &1474924724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6148902481139154282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46726c981a3b18547a9365f7050d4205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6148902481238926581
 GameObject:
   m_ObjectHideFlags: 0
