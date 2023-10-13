@@ -1745,7 +1745,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6148902480609078789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1759,7 +1759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraObj: {fileID: 6148902481238926581}
-  speed: 200
+  speed: 2000
   charCntrl: {fileID: 6148902480609078788}
 --- !u!1 &6148902481238926581
 GameObject:
