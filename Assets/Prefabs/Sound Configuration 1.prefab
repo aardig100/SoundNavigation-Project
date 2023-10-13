@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 1374281706450438218}
   - component: {fileID: 1374281706450438219}
   m_Layer: 0
-  m_Name: Sound Configuration
+  m_Name: Sound Configuration 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
