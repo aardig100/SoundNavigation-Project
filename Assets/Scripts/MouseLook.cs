@@ -18,6 +18,7 @@ public class MouseLook : MonoBehaviour
     void OnEnable()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         horizontalLook.action.performed += HandleHorizontalLookChange;
         verticalLook.action.performed += HandleVerticalLookChange;
     }
