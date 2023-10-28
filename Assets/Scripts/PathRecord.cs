@@ -48,7 +48,6 @@ public class PathRecord : MonoBehaviour
         {
             //Record position and elapsed time into file
             writer.WriteLine(characterController.transform.position.x + "," + characterController.transform.position.z +  "," + timeElapsed);
-            Debug.Log("Writing line to " + path);
             timeSinceLastPositionUpdate = 0;
         }
         
