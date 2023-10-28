@@ -6,15 +6,26 @@ using UnityEngine.SceneManagement;
 //[RequireComponent(typeof(Rigidbody))]
 public class FlagPickup : MonoBehaviour
 {
-    
+    public delegate void FlagPickedUp();
+    public static event FlagPickedUp OnFlagPickedUp;
+
+    bool repeatedCollision = false;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag =="Flag")
         {
             //Go to next maze scene
-            StateData.mazeNumber += 1;
-            SceneManager.LoadScene(7);
+            if (!repeatedCollision)
+            {
+                repeatedCollision = true;
+                StateData.mazeNumber += 1;
+                if (OnFlagPickedUp != null)
+                    OnFlagPickedUp.Invoke();
+                else
+                    SceneManager.LoadScene(3);
+
+            }
         }
 
 

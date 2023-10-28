@@ -16,7 +16,7 @@ public class NextMazeMenu : MonoBehaviour
 
     void OnEnable()
     {
-        if(StateData.mazeNumber < 6)
+        if(StateData.mazeNumber < 2)
         {
             nextMazeButton.SetActive(true);
             finishedText.SetActive(false);
