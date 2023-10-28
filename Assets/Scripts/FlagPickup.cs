@@ -14,7 +14,7 @@ public class FlagPickup : MonoBehaviour
         {
             //Go to next maze scene
             StateData.mazeNumber += 1;
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(3);
         }
 
 
