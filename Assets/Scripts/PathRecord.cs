@@ -9,7 +9,7 @@ public class PathRecord : MonoBehaviour
 {
     float timeElapsed = 0.0f;
     float timeSinceLastPositionUpdate = 0.0f;
-    float positionUpdateInterval = 0.5f;
+    float positionUpdateInterval = 0.1f;
     string path;
     StreamWriter writer;
     bool recording = true;
