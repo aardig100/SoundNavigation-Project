@@ -15,7 +15,7 @@ public class PathRecord : MonoBehaviour
     bool recording = true;
 
     [SerializeField]
-    private CharacterController characterController;
+    private CapsuleCollider characterController;
 
     // Start is called before the first frame update
     void Awake()

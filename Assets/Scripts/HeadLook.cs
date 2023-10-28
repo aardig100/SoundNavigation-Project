@@ -13,10 +13,16 @@ public class HeadLook : MonoBehaviour
     float yRot;
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    private void OnDisable()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
