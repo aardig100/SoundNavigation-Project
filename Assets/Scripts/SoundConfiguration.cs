@@ -6,18 +6,45 @@ using UnityEngine;
 public class SoundConfiguration : MonoBehaviour
 {
     [SerializeField]
-    AudioSource[] sources;
+    AudioSource[] positiveSources;
     [SerializeField]
-    AudioClip[] clips;
+    AudioSource[] negativeSources;
+    [SerializeField]
+    AudioClip[] positiveClips;
+    [SerializeField]
+    AudioClip[] negativeClips;
 
 
     private void OnEnable()
     {
-        for (int i = 0; i < sources.Length; i ++)
+        for(int i = 0; i < positiveSources.Length; i ++)
         {
-            sources[i].clip = clips[i];
-            sources[i].Play();
+            positiveSources[i].clip = positiveClips[i];
+            positiveSources[i].Play();
         }
+
+        for(int i = 0; i < negativeSources.Length; i ++)
+        {
+            negativeSources[i].clip = negativeClips[i];
+            negativeSources[i].Play();
+        }
+
+        if(StateData.soundConfiguration == 1)
+        {
+            foreach (AudioSource source in positiveSources)
+            {
+                source.enabled = false;
+            }
+        }
+        else if(StateData.soundConfiguration == 2)
+        {
+            foreach(AudioSource source in negativeSources)
+            {
+                source.enabled = false;
+            }
+        }
+
+
     }
 
 }
