@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(CharacterController))]
+//[RequireComponent(typeof(Rigidbody))]
 public class FlagPickup : MonoBehaviour
 {
     public delegate void FlagPickedUp();
